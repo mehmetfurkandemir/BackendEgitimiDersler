@@ -1,5 +1,5 @@
 ﻿namespace Project08_NumberMethods;
-
+using System;
 class Program
 {
     static void Main(string[] args)
@@ -22,5 +22,7 @@ class Program
         Random rnd = new Random();
         int randomNumber = rnd.Next(0, 100);
         System.Console.WriteLine(randomNumber);
+        System.Console.WriteLine();
+        
     }
 }
