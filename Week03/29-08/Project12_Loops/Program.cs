@@ -19,23 +19,24 @@ class Program
         //     }
         // }
 
-        // System.Console.Write("Fakt sayısı giriniz: ");
-        // string numberString = Console.ReadLine();
-        // int factorial = 1;
+        System.Console.Write("Fakt sayısı giriniz: ");
+        string numberString = Console.ReadLine();
+        int factorial = 1;
 
-        // if(int.TryParse(numberString, out int number))
-        // {
-        //     for (int i = 1; i <= number; i++)
-        //     {
-        //         //factorial = factorial * i;
-        //         factorial *= i;
-        //     }
-        //     Console.WriteLine(factorial);
-        // }
-        // else
-        // {
-        //     System.Console.WriteLine("Geçerli bir değer giriniz: ");
-        // }
+        if (int.TryParse(numberString, out int number))
+        {
+            for (int i = 1; i <= number; i++)
+            {
+                //factorial = factorial * i;
+                factorial *= i;
+            }
+            Console.WriteLine(factorial);
+        }
+        else
+        {
+            System.Console.WriteLine("Geçerli bir değer giriniz: ");
+        }
+        int i = 1;
 
 
         #endregion
