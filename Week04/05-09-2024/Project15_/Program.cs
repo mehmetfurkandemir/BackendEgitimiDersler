@@ -67,7 +67,7 @@ class Program
         //     if(numbers[i] > enb) enb=numbers[i];
         // }
         // System.Console.WriteLine(enb);
-    
+
         //Diziyi sıralamak
         // int[] numbers = { 23, 32324, 34, 127, 76, 45648, 5675, 567, 1324, 8768 };
         // Array.Sort(numbers);
@@ -93,10 +93,45 @@ class Program
         // int index = Array.IndexOf(numbers, 76);
         // System.Console.WriteLine(index);
 
-        string firstName = "Osimhen";
-        char[] firstName2 = {'o', 's', 'i', 'm'};
-        System.Console.WriteLine(firstName[4]);
-        System.Console.WriteLine(firstName2);
+        // string firstName = "Osimhen";
+        // char[] firstName2 = {'o', 's', 'i', 'm'};
+        // System.Console.WriteLine(firstName[4]);
+        // System.Console.WriteLine(firstName2);
+
+        // string[] names = {'Ali', 'Veli', 'Ayşe'};
+        // string[] newNames = new string[names.Length];
+        // Array.Copy(names, newNames, 3);
+        // foreach (var name1 in newNames)
+        // {
+        //     System.Console.WriteLine(name1);
+        // }
+
+
+        //Dizi içinde var yok kontrolü
+
+        // int[] numbers = { 50, 300, 23, 9, 435, 66, 1, 23 };
+        // bool exists = Array.Exists(numbers, x => x > 600);
+        // System.Console.WriteLine(exists == true ? "600'den büyük sayı var":"600'den büyük sayı yok!");
+
+        //Dizi içinde belirtilen koşula uygun ilk elemanı getir
+        // int[] numbers = { 50, 300, 23, 9, 435, 66, 1, 23 };
+        // int result = Array.Find(numbers, x => x > 60);
+        // System.Console.WriteLine(result);
+
+        //Dizi içinde belirtilen koşula uygun TÜM elemanları getir
+
+        // int[] numbers = { 50, 300, 23, 9, 435, 66, 1, 23 };
+        // int[] results = Array.FindAll(numbers, x => x > 60);
+        // foreach (var number in results)
+        // {
+        //     System.Console.WriteLine(number);
+        // }
+    
+        //dizinin boyutunu değiştirme
+
+        // int[] numbers = {3, 6, 9};
+        // Array.Resize(ref numbers, 4);
+        // numbers[3] = 35;
 
     }
 }
