@@ -1,0 +1,1 @@
+EXECUTE dbo.OgrenciEkle 'Furkan','Demir','1998-07-14',3
