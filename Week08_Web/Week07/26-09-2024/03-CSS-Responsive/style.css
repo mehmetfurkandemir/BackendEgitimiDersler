@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.page-header {
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 30px;
+}
+
+h1{
+    font-size: 2.5rem;
+}
+
+h2{
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: orange;
+}
+
+
+.about, 
+.skills, 
+.links, 
+.profile-picture, 
+.contact-form{
+    background-color: white;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 5px orange;
+}
+
+.skills {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.skills-container {
+    display: flex;
+}
+
+.skills-card{
+    margin-right: 20px;
+    background-color: #333;
+    color: orange;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
