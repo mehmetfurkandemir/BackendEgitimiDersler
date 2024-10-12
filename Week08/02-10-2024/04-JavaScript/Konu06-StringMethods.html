@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String</title>
+</head>
+<body>
+    <script>
+        let title = "String'e ait metotlar";
+        // console.log("Başlık: " + title);
+        // console.log("Başlığın uzunluğu: " + title.length);
+        // console.log("Başlığın 3. karakteri: " + title.charAt(2));
+        // console.log("Küçük harf: " + title.toLowerCase());
+        // console.log("Küçük harf: " + title.toLocaleLowerCase());
+        // console.log("Büyük harf: " + title.toUpperCase());
+        // console.log("Büyük harf: " + title.toLocaleUpperCase());
+        // console.log("Başlığın ilk 6 karakteri: " + title.slice(6));
+        // console.log("Parçala: " + title.split(" "));
+        let titleSplit = title.split();
+        for(let i=0; i<titleSplit.length; i++){
+            title = "";
+            if(i!=titleSplit.length-1){
+
+                title+=titleSplit[i] + "-";
+
+            }else{
+                title+= titleSplit[i];
+
+            }
+            console.log(titleSplit);
+            console.log(title);
+        }
+
+    </script>
+</body>
+</html>

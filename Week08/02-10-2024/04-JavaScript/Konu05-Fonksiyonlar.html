@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fonksiyonlar</title>
+  </head>
+  <body>
+    <h1>Selam</h1>
+    <button onclick="renkDegistir('black','white')">Karanlık Mod</button>
+    <button onclick="renkDegistir('white','black')">Aydınlık Mod</button>
+    <script>
+      function renkDegistir(arkaPlanRengi, yaziRengi) {
+        document.bgColor = arkaPlanRengi;
+        document.fgColor = yaziRengi;
+      }
+      //renkDegistir("red","white");
+    </script>
+  </body>
+</html>

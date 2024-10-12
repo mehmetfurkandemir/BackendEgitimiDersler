@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Olaylar</title>
+  </head>
+  <body>
+    <h1>JavaScript Events</h1>
+    <div>
+      <button onclick="changeColor('red', 'white')">Kırmızı Beyaz</button>
+    </div>
+    <div>
+      <button onmouseover="changeColor('black', 'yellow')">Siyah Sarı</button>
+    </div>
+    <div>
+      <button onmouseout="changeColor('blue', 'yellow')">Lacivert Sarı</button>
+    </div>
+    <div>
+      <button ondblclick="changeColor('purple', 'white')">Mor Beyaz</button>
+    </div>
+    <br /><br /><br />
+    <form name="gender">
+      <input type="radio" name="genderradio" id="" />Kadın
+      <input type="radio" name="genderradio" id="" />Erkek
+      <input type="button" value="Seçim Yap" onclick="showGender()" />
+    </form>
+    <br /><br />
+    <input type="button" value="Google" onclick="control()" />
+    <input type="button" value="Google New Tab" onclick="controlNewTab()" />
+
+    <form action="">
+      <div style="margin-top: 10px; margin-bottom: 10px">
+        <label for="">Ad</label>
+        <input
+          type="text"
+          name=""
+          id=""
+          onfocus="this.placeholder='Ali'"
+          onblur="placeholder=''"
+        />
+      </div>
+      <div>
+        <label for="">Soyad</label>
+        <input
+          type="text"
+          name=""
+          id=""
+          onfocus="this.placeholder='Demir'"
+          onblur="placeholder=''"
+        />
+      </div>
+    </form>
+
+    <form action="" style="margin-top: 10px">
+      <select name="" id="" onchange="go(this)">
+        <option value="#">Bir arama motoru seçiniz</option>
+        <option value="https://www.google.com.tr">Google</option>
+        <option value="https://www.bing.com.tr">Bing</option>
+        <option value="https://www.yahoo.com.tr">Yahoo</option>
+        <option value="https://www.yandex.com.tr">Yandex</option>
+      </select>
+    </form>
+
+    <div>
+      <p id="about">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore veniam,
+        ipsa dignissimos omnis quam ipsum. Voluptatum vero quidem placeat odio
+        harum possimus aperiam cum, et, ab commodi earum suscipit ratione?
+      </p>
+    </div>
+
+    <script>
+      const about = document.getElementById("about");
+      about.addEventListener("click", function () {
+        location.href = "https://acunmedyaakademi.com";
+      });
+
+      function go(element) {
+        window.open(element.options[element.selectedIndex].value);
+      }
+
+      function control() {
+        let answer = confirm("Sayfadan ayrılmak üzeresiniz, emin misiniz?");
+        if (answer) {
+          location.href = "https://www.google.com.tr";
+        }
+      }
+
+      function controlNewTab() {
+        if (confirm("Siteden ayrılıyorsunuz, emin misiniz?")) {
+          window.open("https://www.google.com.tr");
+        }
+      }
+
+      function changeColor(bgColor, color) {
+        document.bgColor = bgColor;
+        document.fgColor = color;
+      }
+      function showGender() {
+        let message = "";
+        if (document.gender.genderradio[0].checked) {
+          message = "Siz bir kadınsınz";
+        } else {
+          message = "Siz bir erkeksiniz";
+        }
+        alert("Sonuç: " + selectedGenderMessage);
+      }
+    </script>
+  </body>
+</html>

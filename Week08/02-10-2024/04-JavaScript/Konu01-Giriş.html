@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript'e Giriş</title>
+  </head>
+  <body>
+    <h1>Etkileşim</h1>
+    <p id="header-text">Merhaba Dünya!</p>
+    <button onclick="changeText()">Tıkla</button>
+
+    <script>
+      // Burası JavaScript Kod Alanı
+      function changeText() {
+        document.getElementById("header-text").innerText = "Hello World!";
+      }
+      console.log("Dikkat");
+      console.error("Hata");
+      console.warn("Uyarı");
+
+      //Değişken Tanımlama
+      // VAR - LET (JS MODERN LET KULLAN)
+
+      let productName;
+      let brand = "Apple";
+      //   console.log(productName);
+      //   console.log(productName, typeof(productName));
+      //   console.log(productName + " " + typeof(productName));
+
+      //Tipler
+      let firstName = "Furkan";
+      let age = 35;
+      let isActive = true;
+
+      //   console.log(firstName, typeof(firstName));
+      //   console.log(age, typeof(age));
+      //   console.log(isActive, typeof(isActive))
+
+      let car = {
+        brand: "Opel",
+        model: "Corsa",
+        year: 2015,
+        color: "Sarı",
+      };
+
+      console.log(car.brand);
+      console.log(car);
+
+      // Sabitler
+
+      const pi = 3.14;
+      console.log(pi);
+    </script>
+  </body>
+</html>
