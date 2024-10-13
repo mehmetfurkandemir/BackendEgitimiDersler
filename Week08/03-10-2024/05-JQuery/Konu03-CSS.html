@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS</title>
+    <style>
+      .title {
+        color: red;
+        font-size: 40px;
+      }
+      .color {
+        color: aliceblue;
+      }
+      .borders {
+        border: 2px solid blue;
+      }
+    </style>
+  </head>
+  <body>
+    <img src="https://picsum.photos/id/237/300/200" alt="" srcset="" />
+    <h3 id="title1">Jquery ile CSS</h3>
+    <div id="color" class="color">Lorem ipsum dolor sit amet.</div>
+    <hr />
+
+    <script src="jquery.js"></script>
+    <script>
+      $(document).ready(function () {
+        $('#color').css('font-size', '50px');
+        $('#color').css('padding', "10px");
+        $('#color').css('background-color', 'yellow');
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML</title>
+  </head>
+  <body>
+    <h1>HTML İşlemleri</h1>
+    <p id="degistir" style="border: 1px solid red"></p>
+
+    <p id="jsdegistir" style="border: 1px solid red"></p>
+
+    <p id="jq-ile-al">Jquery ile içerik al</p>
+    <p id="js-ile-al">JS ile içerik al</p>
+    
+
+    <h3 id="jq-metin"></h3>
+    <h3 id="js-metin"></h3>
+
+    <div id="html-change"></div>
+
+    <script src="jquery.js"></script>
+    <script>
+      $(document).ready(function () {
+        const degistirP = $("#degistir");
+        degistirP.text("lorem ipsum dolor sit amet");
+
+        const jqMetin = $('@jq-ile-al').text();
+        $('#jq-metin').text(jqMetin);
+
+        const jsMetin = document.getElementById('js-ile-al').textContent;
+        document.getElementById('js-metin').textContent=jsMetin;
+
+        /*
+            JS string ifadeler 3 şekilde yazılır:
+            1- ''
+            2- ""
+            3- `` (template Literal)
+        */
+
+        let firstName = 'Alex'
+        let age = '48';
+
+        $('#html-change').html('');
+        
+      });
+    </script>
+  </body>
+</html>

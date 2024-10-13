@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AJAX</title>
+  </head>
+  <body>
+    <form action="/Konu06-AJAX.html">
+      <input type="text" name="product-name" id="" placeholder="Ürün adı..." />
+      <input
+        type="text"
+        name="product-price"
+        id=""
+        placeholder="Ürün fiyatı..."
+      />
+      <input type="submit" value="Kaydet" />
+    </form>
+    <hr>
+    <input type="button" value="Ajax ile Veri Getir" id="getData">
+    <div id="ajax-content" style="border: 1px solid red;"></div>
+
+
+    <script src="jquery.js"></script>
+
+    <script>
+        $('#getData').click(function(){
+            $.ajax({
+                url: '/Content.txt', //Ajax isteğini göndereceğimiz adres
+                success: function(result){
+                    $('#ajax-content').html(result)
+                },
+                error: function(error){
+                    $('$ajax-content').html(`Hata: ${error.statusText}`);
+                    console.log(error);
+                }
+            });
+        });
+    </script>
+  </body>
+</html>

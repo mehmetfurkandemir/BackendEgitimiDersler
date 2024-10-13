@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Efektler</title>
+  </head>
+  <body>
+    <input type="button" id="btn-fade-out" value="Fade out" />
+    <input type="button" id="btn-fade-in" value="Fade in" />
+    <input type="button" id="btn-fade-to" value="Fade to" />
+    <input type="button" id="btn-toggle" value="Toggle" />
+    <br><br>
+    <input type="button" id="start-animation" value="Yükseklik Animasyonu Başlat">
+    <input type="button" id="stop-animation" value="Yükseklik Animasyonu Durdur-Sıfırla">
+
+
+    <div
+      id="box"
+      style="
+        background-color: rgb(255, 9, 9);
+        height: 100px;
+        width: 80px;
+        pad: 16px;
+        margin: 16px;
+        color: white;
+        border-radius: 20px;
+      "
+    >
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam, unde dolor. Impedit ducimus voluptate perspiciatis quisquam. Ut quo voluptatum illum modi repellendus incidunt repudiandae ullam! Harum unde iure enim quidem.
+    </div>
+    <script src="jquery.js"></script>
+    <script>
+        $('#btn-fade-out').click(function(){
+            $('#box').fadeOut(500);
+        });
+        $('#btn-fade-in').click(function(){
+            $('#box').fadeIn(1000);
+        });
+        $('#btn-fade-to').click(function(){
+            $('#box').fadeTo(1000, 0);
+        });
+        $('#btn-toggle').click(function(){
+            $('#box').fadeToggle(1000);
+        });
+
+        $('#start-animation').click(function(){
+            $('#box').animate({
+                "height": "500px",
+                "width":"500px"
+            })
+        })
+        $('#stop-animation').click(function(){
+            $('#box').animate({
+                "height": "20px"
+            })
+        })
+    </script>
+  </body>
+</html>

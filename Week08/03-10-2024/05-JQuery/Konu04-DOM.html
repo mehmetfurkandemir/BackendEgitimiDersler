@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM DOCUMENT OBJECT MODEL</title>
+  </head>
+  <body>
+    <form>
+      <input type="text" name="" id="metin" value="textbox içindeki değer" />
+      <hr />
+      <textarea name="" id="urunAciklama">Ürünün Açıklaması</textarea>
+      <hr />
+      <input type="checkbox" name="" id="onay" />Onaylıyorum
+      <hr />
+      <select name="" id="kategori">
+        <option value="Elektronik">Elektronik</option>
+        <option value="Bilgisayar">Bilgisayar</option>
+        <option value="Telefon">Telefon</option>
+      </select>
+      <hr />
+      <input type="radio" name="cinsiyet" id="" value="Kadın" />
+      <input type="radio" name="cinsiyet" id="" value="Erkek" />
+      <hr />
+      <a href="index.html" title="Anasayfa">Anasayfa</a>
+      <hr />
+    </form>
+    <hr />
+    <button type="button" id="btn-sonuc">Sonuçları Getir</button><br /><br />
+    <button type="button" id="btn-attribute">Attribute Değerleri</button>
+    <h3>Sonuçlar:</h3>
+    <p id="sonuclar"></p>
+
+    <div
+      id="hedef-div"
+      style="margin-bottom: 5px; padding: 10px; border: 1px solid red"
+    >
+      <h3>bu html tarafında yazıldı</h3>
+    </div>
+
+    <input type="button" id="append" value="Append" />
+    <input type="button" id="prepend" value="Prepend" />
+    <input type="button" id="after" value="After" />
+    <input type="button" id="before" value="Before" />
+
+    <input type="button" value="Sil" id="delete">
+    <br>
+    <input type="button" value="Gizle" id="hide">
+    <input type="button" value="Göster" id="show">
+    
+
+
+    <script src="jquery.js"></script>
+    <script>
+      $("#append").click(function () {
+        $("#hedef-div").append(
+          '<h3 style="color: red;">Append ile eklendi</h3>'
+        );
+    });
+
+      $("#prepend").click(function () {
+        $("#hedef-div").prepend(
+          '<h3 style="color: blue;">Prepend ile eklendi</h3>'
+        );
+    });
+      $("#after").click(function () {
+        $("#hedef-div").after(
+          '<h3 style="color: purple;">After ile eklendi</h3>'
+        );
+    });
+      $("#before").click(function () {
+        $("#hedef-div").before(
+          '<h3 style="color: green;">Before ile eklendi</h3>'
+        );
+    });
+
+    // $('#delete').click(function(){
+    //     $('#before').remove();
+    // });
+    $('#delete').click(function(){
+        $('#before').hide();
+    });
+    
+
+    $('#hide').click(function(){
+        $('#hedef-div').hide();
+    });
+
+    $('#show').click(function(){
+        $('#before').show();
+    });
+
+
+    </script>
+  </body>
+</html>

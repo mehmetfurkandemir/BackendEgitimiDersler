@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Seçiciler</title>
+  </head>
+  <body>
+    <p id="hello">Merhaba</p>
+
+    <div>1.Div İçeriği</div>
+    <div>2.Div İçeriği</div>
+    <div id="bosDiv" style="border: 1px solid red"></div>
+
+    <br />
+    <hr />
+
+    <h2 class="baslik1">Elementleri class adına göre seçme</h2>
+
+    <p class="metin1">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, illo laborum
+      impedit vitae neque dolorem dignissimos asperiores sit expedita officiis
+      ratione illum voluptatum, itaque, nisi nemo rem dolorum cumque natus!
+    </p>
+
+    <p id="metin2" style="background-color: aqua">
+        <a href="#">Link1</a>
+        <ul class="menu">
+            <li class="menu-item">Anasayfa</li>
+            <li class="menu-item">Hakkında</li>
+            <li class="menu-item">İletişim</li>
+        </ul>
+    </p>
+
+        <a href="#">Link2</a>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+      const helloElement = document.getElementById("hello");
+      // console.log(helloElement);
+      helloElement.style.backgroundColor = "aqua";
+      helloElement.style.padding = "10px";
+      helloElement.style.color = "red";
+      helloElement.innerText = "Bu yazıyı js değiştirdi.";
+
+      const allDivs = document.getElementsByTagName("div");
+      document.getElementById("bosDiv").innerHTML =
+        '<a href="https://www.google.com">Google</a>';
+
+      const baslik1 = document.getElementsByClassName("baslik1");
+      const metin1 = document.getElementsByClassName("metin1");
+    
+      //CSS Sorgularına göre element seçmek
+        
+    //   const linkler = document.getElementsByTagName('.metin1 a');
+        const linkler = document.querySelectorAll('.metin1 a');
+
+    </script>
+    
+  </body>
+</html>

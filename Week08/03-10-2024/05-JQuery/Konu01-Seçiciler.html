@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JQuery Seçiciler</title>
+  </head>
+  <body>
+    <h1>JQuery Seçiciler</h1>
+    <p>JQuery iyi bir kütüphanedir.</p>
+    <h2>JQuery sayfaya nasıl eklenir?</h2>
+
+    <p>1- CDN Linki ile</p>
+
+    <p>2- JQuery JavaScript dosyasını projemizin içine indirerek</p>
+
+    <h2 id="title">Id'ye Göre Seçme</h2>
+
+    <p id="message">
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum qui,
+      sunt rem dignissimos aut neque quasi et molestias error ab blanditiis
+      recusandae necessitatibus numquam laborum harum aliquid illum autem enim!
+    </p>
+
+    <h2 id="title">Deneme Başlığı</h2>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <!--jquery yükleme satırı, kendi scriptlerimizden önce gelmelidir-->
+
+    <script>
+      $("#title").text("Başlığı değiştirdik.");
+
+      const paragraph = $(".message");
+      paragraph.text("Paragrafın içindeki mesajı jq ile değiştirdik");
+      paragraph.html('<ul><li>Spor</li><li>Sanat</li></ul>');
+    </script>
+  </body>
+</html>
