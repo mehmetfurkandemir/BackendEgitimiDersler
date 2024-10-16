@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="center">
+      <button id="show-login">Giriş Yap</button>
+    </div>
+
+    <div class="popup">
+      <div class="close-btn">&times;</div>
+      <div class="form">
+        <h2>Giriş Yap</h2>
+        <div class="form-element">
+          <label for="email">Kullanıcı Adı</label>
+          <input type="text" id="email" placeholder="Kullanıcı Adı" />
+        </div>
+        <div class="form-element">
+          <label for="password">Parola</label>
+          <input type="password" id="password" placeholder="Parola" />
+        </div>
+
+        <div class="form-element">
+          <button id="login-btn">Giriş</button>
+        </div>
+        <div class="form-element">
+          <a href="#">Şifremi Unuttum</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="center success-page" style="display: none">
+      <h1>Hoş Geldiniz!</h1>
+    </div>
+
+    <div class="center failure-page" style="display: none">
+      <h1>Başarısız İşlem!</h1>
+    </div>
+
+    <script src="style.js"></script>
+  </body>
+</html>
