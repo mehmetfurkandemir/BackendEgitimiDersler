@@ -10,8 +10,8 @@ document.querySelector("#login-btn").addEventListener("click", function() {
     const username = document.querySelector("#email").value;
     const password = document.querySelector("#password").value;
 
-    const correctUsername = "admin";  // Sabit kullanıcı adı
-    const correctPassword = "12345";  // Sabit parola
+    const correctUsername = "admin";
+    const correctPassword = "12345";
 
     if (username === correctUsername && password === correctPassword) {
         document.querySelector(".popup").classList.remove("active");
