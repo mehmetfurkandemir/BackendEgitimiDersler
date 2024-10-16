@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WebSite</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!--Header-->
+    <header class="header">
+      <h1>Web Developer</h1>
+    </header>
+    <!--AnaSayfa-->
+    <div class="anasayfa">
+      <h1>Skills</h1>
+
+      <p>HTML</p>
+      <div class="container">
+        <div class="skills-html">90%</div>
+      </div>
+
+      <p>CSS</p>
+      <div class="container">
+        <div class="skills-css">90%</div>
+      </div>
+
+      <p>JavaScript</p>
+      <div class="container">
+        <div class="skills-javascript">60%</div>
+      </div>
+
+      <p>DotNet</p>
+      <div class="container">
+        <div class="skills-dotnet">60%</div>
+      </div>
+
+      <p>MSSQL</p>
+      <div class="container">
+        <div class="skills-mssql">85%</div>
+      </div>
+    </div>
+
+    <!--Çalışmalar-->
+
+    <h1 class="h1">My Works</h1>
+
+    <div class="card-container">
+      <div class="card">
+        <img src="work1.png" alt="" />
+        <div class="card-content">
+          <h3>Clock</h3>
+          <p>
+            The clock on this website is designed to provide users with a
+            real-time display of the current time. It updates every second,
+            ensuring accuracy and reliability
+          </p>
+          <a href="" class="btn">Read More</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="work2.png" alt="" />
+        <div class="card-content">
+          <h3>Login Page</h3>
+          <p>
+            This page is designed with simplicity and security in mind,
+            providing a seamless experience while safeguarding user data.
+          </p>
+          <a href="" class="btn">Read More</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="work3.png" alt="" />
+        <div class="card-content">
+          <h3>Coffee Website</h3>
+          <p>
+            This cafe website serves as an online platform for showcasing our
+            offerings and creating a welcoming environment for our customers.
+          </p>
+          <a href="" class="btn">Read More</a>
+        </div>
+      </div>
+    </div>
+
+    <!--Hakkımda-->
+    <h1 class="h1">My Resume</h1>
+
+    <div class="container-resume">
+      <header class="resumeHeader">
+        <h2 style="text-align: center">M. Furkan Demir</h2>
+        <p>Email: furkandemirmehmet@gmail.com</p>
+        <p>Phone: +90 552 384 2314</p>
+        <p>Linkedin: https://www.linkedin.com/in/mehmetfurkandemir/</p>
+      </header>
+
+      <section>
+        <h2>Objective</h2>
+        <p>
+          Motivated developer currently studying .NET, HTML, CSS, and MSSQL at
+          Acunmedya Academy, with an Oracle DBA certificate. Seeking to apply my
+          skills in a dynamic environment that fosters growth and innovation.
+        </p>
+      </section>
+
+      <section>
+        <h2>Technical Skills</h2>
+        <li>Web Development: HTML, CSS, JavaScript</li>
+        <li>Frameworks: .NET</li>
+        <li>Databases: MSSQL, Oracle</li>
+        <li>Database Administration: Oracle DBA practices</li>
+        <li>Tools: Visual Studio, Azure Data Studio</li>
+      </section>
+
+      <section>
+        <h2>Projects</h2>
+        <ul>
+          <li>Circle Coffee Responsive Website</li>
+          <li>Clock</li>
+          <li>Login Page</li>
+        </ul>
+      </section>
+    </div>
+
+    <!--İletişim-->
+
+    <div id="overlay">
+        <form onsubmit="event.preventDefault(); validateForm()">
+            <h1 class="h1-contact">Get in touch</h1>
+
+            <label for="name">Name:</label>
+            <input type="text" id="name" placeholder="Your name">
+            <small class="error"></small>
+            
+            <label for="email">Email:</label>
+            <input type="text" id="email" placeholder="Your email">
+            <small class="error"></small>
+            
+            <label for="message">Message:</label>
+            <textarea id="message" placeholder="Your message" rows="6"></textarea>
+            <small class="error"></small>
+            
+            <div class="center">
+                <input type="submit" value="Send Message">
+            </div>
+
+            <p id="success"></p>
+            
+        </form>
+    </div>
+
+    <script src="style.js"></script>
+  </body>
+</html>
