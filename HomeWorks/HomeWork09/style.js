@@ -8,3 +8,4 @@ document.getElementById("revealTips").addEventListener("click", function() {
         this.textContent = "Reveal Tips"; // Change button text back
     }
 });
+
