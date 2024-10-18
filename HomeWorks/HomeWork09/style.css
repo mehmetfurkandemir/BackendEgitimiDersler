@@ -1,0 +1,54 @@
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: linear-gradient(to right, white, rgb(199, 199, 246));
+}
+
+.container-blog {
+    text-align: center;
+    margin: 90px 150px 0; /* Adjusted for better readability */
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.img-container {
+    display: flex; /* Enables flexbox for centering */
+    justify-content: center; /* Centers content horizontally */
+    align-items: center; /* Centers content vertically */
+    margin: 20px auto; /* Centers the container on the page */
+    max-width: 800px; /* Sets a maximum width for the image container */
+}
+
+.img-container img {
+    max-width: 100%; /* Ensures the image fits within the container */
+    height: auto; /* Maintains aspect ratio */
+}
+
+.card {
+    width: 18rem; /* Set fixed width for cards */
+    margin: 10px; /* Adds spacing between cards */
+}
+
+@media (max-width: 768px) {
+    .card {
+        width: calc(50% - 40px); /* Adjust width for medium screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        width: calc(100% - 40px); /* Full width for small screens */
+    }
+}
+
+.other-blogs{
+    text-align: center;
+    
+}

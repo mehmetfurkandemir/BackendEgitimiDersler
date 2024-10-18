@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <title>Sample Blog</title>
+  </head>
+  <body>
+    <!-- Header Navbar -->
+    <nav class="navbar navbar-expand-md sticky-top bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Home</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarScroll"
+          aria-controls="navbarScroll"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarScroll">
+          <ul
+            class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll"
+            style="--bs-scroll-height: 100px"
+          >
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#">Blogs</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Link</a></li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-info" type="submit">
+              <img
+                src="search (1).svg"
+                alt=""
+                style="width: 20px; height: 20px"
+              />
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Body Blog -->
+    <div class="container-blog text-center">
+      <h1>Web Development Unlocked: Tips and Tricks</h1>
+
+      <br />
+      <h3>
+        An Introduction to Bootstrap: A Powerful Tool for Responsive Web Design
+      </h3>
+      <p>
+        In today’s fast-paced web development world, creating responsive,
+        mobile-first websites is essential. That’s where Bootstrap comes in.
+        Bootstrap is an open-source CSS framework that helps developers design
+        responsive websites with ease. Originally developed by Twitter,
+        Bootstrap has become one of the most popular front-end development
+        frameworks. Why Use Bootstrap? Responsive Design: Bootstrap is built
+        with a mobile-first approach, which ensures that your website looks
+        great on any device, whether it’s a phone, tablet, or desktop. Pre-built
+        Components: It provides a variety of pre-built components like
+        navigation bars, buttons, modals, and forms, which you can easily
+        customize and integrate into your projects. Grid System: Bootstrap’s
+        grid system allows developers to create flexible layouts with ease. It
+        uses a 12-column layout that adjusts depending on the screen size,
+        making your website look good on all screen sizes. Customizable: Even
+        though Bootstrap provides a lot of ready-to-use features, it’s highly
+        customizable. You can override its default styles and use only the
+        components you need, giving you full control over your design.
+      </p>
+    </div>
+
+    <!-- Reveal Button -->
+    <div class="d-flex justify-content-center flex-column align-items-center">
+      <button id="revealTips" class="btn btn-info mx-2">Reveal Tips</button>
+    </div>
+    <div
+      id="tipsContainer"
+      style="display: none; margin-top: 20px; text-align: center"
+    >
+      <ul style="list-style-type: none; padding: 0">
+        <li>
+          Tip 1: Use a responsive design framework to ensure your site looks
+          great on all devices.
+        </li>
+        <li>
+          Tip 2: Optimize your code by minifying CSS and JavaScript files to
+          improve loading times.
+        </li>
+        <li>
+          Tip 3: Regularly update your dependencies and libraries to keep your
+          project secure and efficient.
+        </li>
+        <li>
+          Tip 4: Keep your CSS organized by using a consistent naming
+          convention.
+        </li>
+        <li>
+          Tip 5: Test your website on different devices to ensure
+          responsiveness.
+        </li>
+      </ul>
+    </div>
+
+    <!-- Image Container -->
+    <div class="img-container">
+      <img src="bootstrap-img.avif" alt="img-bootstrap" />
+    </div>
+
+    <!--Other Blogs text-->
+
+    <h2 class="other-blogs">CHECK OUT MY NEW BLOGS</h2>
+
+    <!-- Cards -->
+    <div class="card-container">
+      <div class="card">
+        <img src="dotnet_600-400.jpg" class="card-img-top" alt="DotNet" />
+        <div class="card-body">
+          <h5 class="card-title">DotNet</h5>
+          <p class="card-text">
+            Explore the power of .NET through my blog, where I share insights,
+            tips, and tutorials to help you harness this versatile framework for
+            your next project.
+          </p>
+          <a href="#" class="btn btn-primary">Read More</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="js_600-400.jpg" class="card-img-top" alt="JavaScript" />
+        <div class="card-body">
+          <h5 class="card-title">JavaScript</h5>
+          <p class="card-text">
+            Discover the versatility of JavaScript on my blog, where I share
+            insights, tips, and tutorials to empower you in building dynamic web
+            applications.
+          </p>
+          <a href="#" class="btn btn-primary">Read More</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="css_600-400.jpg" class="card-img-top" alt="CSS" />
+        <div class="card-body">
+          <h5 class="card-title">CSS</h5>
+          <p class="card-text">
+            Uncover the art of styling on my blog, where I share insights, tips,
+            and tutorials to help you master CSS and create visually stunning
+            web designs.
+          </p>
+          <a href="#" class="btn btn-primary">Read More</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="html_600-400.jpg" class="card-img-top" alt="HTML" />
+        <div class="card-body">
+          <h5 class="card-title">HTML</h5>
+          <p class="card-text">
+            Explore the foundations of web development on my blog, where I share
+            insights, tips, and tutorials to help you master HTML and build
+            robust websites.
+          </p>
+          <a href="#" class="btn btn-primary">Read More</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="mssql_600-400.jpg" class="card-img-top" alt="MSSQL" />
+        <div class="card-body">
+          <h5 class="card-title">MSSQL</h5>
+          <p class="card-text">
+            Delve into the world of data management on my blog, where I share
+            insights, tips, and tutorials to help you master MSSQL and optimize
+            your database solutions.
+          </p>
+          <a href="#" class="btn btn-primary">Read More</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+
+    <div class="container">
+      <footer
+        class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top"
+      >
+        <div class="col-md-4 d-flex align-items-center">
+          <a
+            href="/"
+            class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1"
+          >
+            <svg class="bi" width="30" height="24">
+              <use xlink:href="#bootstrap"></use>
+            </svg>
+          </a>
+          <span class="mb-3 mb-md-0 text-body-secondary"
+            >© 2024 Furkan Demir - Your Source for Web Development
+            Insights.</span
+          >
+        </div>
+      </footer>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="style.js"></script>
+  </body>
+</html>
