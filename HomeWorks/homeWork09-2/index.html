@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hotel</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="container">
+        <h1>
+          
+          <span class="luxehaven">Luxe Haven</span>
+        </h1>
+        <nav>
+          <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#rooms">Rooms</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+      <img class="big-hotel" src="img/big-hotel.jpg" alt="" />
+      <p class="text-1">Welcome to Luxe Haven Hotel</p>
+      <!--About-->
+      <div class="about">
+        <h2>About Us</h2>
+        <h3>
+          Welcome to Charming Oasis Hotel, your ultimate escape in the heart of
+          the city. Nestled amid lush greenery and tranquil surroundings, our
+          hotel offers a perfect blend of luxury, comfort, and exceptional
+          service. At Charming Oasis, we pride ourselves on providing our guests
+          with a unique experience. Our elegantly designed rooms are equipped
+          with modern amenities and feature stunning views of the surrounding
+          landscape. Whether you’re here for a romantic getaway, a family
+          vacation, or a business trip, we have the perfect accommodation to
+          suit your needs. Our on-site restaurant serves a delectable selection
+          of local and international cuisine, crafted by our talented chefs who
+          source the freshest ingredients. Enjoy a fine dining experience or
+          relax with a casual meal while taking in the serene atmosphere.
+        </h3>
+      </div>
+    </header>
+
+    <body>
+      <!--Services-->
+
+      <h1 class="services">Services</h1>
+
+      <nav>
+        <ul class="icons">
+          <li><img src="img/reception-bell.svg" alt="" /></li>
+          <li><img src="img/restaurant2.png" alt="" /></li>
+          <li><img src="img/transportation.png" alt="" /></li>
+          <li><img src="img/spa.svg" alt="" /></li>
+        </ul>
+      </nav>
+
+      <!--Cards-->
+      <div class="card-container">
+        <div class="card">
+          <h2>Front Desk</h2>
+          <p>
+            Your first point of contact for all your hotel needs, open 24/7.
+          </p>
+          <button>View Details</button>
+        </div>
+        <div class="card">
+          <h2>Restaurant</h2>
+          <p>
+            Enjoy a delightful dining experience with a variety of cuisines.
+          </p>
+          <button>View Details</button>
+        </div>
+        <div class="card">
+          <h2>Transportation</h2>
+          <p>
+            Convenient transport services to explore the city with ease.
+          </p>
+          <button>View Details</button>
+        </div>
+        <div class="card">
+          <h2>SPA</h2>
+          <p>
+            Relax and rejuvenate with our luxurious spa treatments.
+          </p>
+          <button>View Details</button>
+        </div>
+      </div>
+
+      <!--Rooms-->
+      <h1 class="services">Rooms</h1>
+      <div class="rooms">
+
+        <div class="card-container">
+            <div class="card">
+                <img src="img/standard-room.jpg" alt="">
+              <h2>Standard Room</h2>
+              <p>
+                A cozy and budget-friendly option that provides essential amenities for a comfortable stay.
+              </p>
+              <button>View Details</button>
+            </div>
+            <div class="card">
+                <img src="img/deluxe.jpg" alt="">
+              <h2>Deluxe Room</h2>
+              <p>
+                A spacious and elegantly appointed room that offers upgraded features and enhanced comfort for a more luxurious experience.
+              </p>
+              <button>View Details</button>
+            </div>
+            <div class="card">
+                <img src="img/family.webp" alt="">
+              <h2>Family Suite</h2>
+              <p>
+                A larger accommodation designed for families, featuring multiple beds and extra space to ensure everyone feels at home.
+              </p>
+              <button>View Details</button>
+            </div>
+            <div class="card">
+                <img src="img/penthouse.jpg" alt="">
+              <h2>Penthouse</h2>
+              <p>
+                An opulent top-floor suite that boasts stunning views, exclusive amenities, and luxurious living space for a truly indulgent getaway.
+              </p>
+              <button>View Details</button>
+            </div>
+          </div>
+
+           <!-- Contact Section -->
+
+           <!-- Contact Section -->
+<section class="contact-section">
+    <h1 class="services">Contact Us</h1>
+    <div class="contact-container">
+        <form id="contactForm" onsubmit="return validateForm()">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required />
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required />
+            </div>
+            <div class="form-group">
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="subject" required />
+            </div>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+            </div>
+            <button type="submit" class="submit-btn">Send Message</button>
+            <div id="successMessage" class="success-message" style="display: none">
+                Thank you for contacting us!
+            </div>
+        </form>
+    </div>
+</section>
+
+    
+    </body>
+    <script src="style.js"></script>
+  </body>
+</html>
+
