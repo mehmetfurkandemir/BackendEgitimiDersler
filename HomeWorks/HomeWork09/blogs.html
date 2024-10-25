@@ -10,10 +10,10 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="blogs.css">
+    <link rel="stylesheet" href="blogs.css" />
     <title>Blogs</title>
   </head>
-  
+  <body>
     <!-- Header Navbar -->
     <nav class="navbar navbar-expand-md sticky-top bg-body-tertiary">
       <div class="container-fluid">
@@ -39,8 +39,12 @@
                 >Home</a
               >
             </li>
-            <li class="nav-item"><a class="nav-link" href="#">Blogs</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="blogs.html">Blogs</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
           </ul>
           <form class="d-flex" role="search">
             <input
@@ -61,78 +65,92 @@
       </div>
     </nav>
 
-    <!--Calendar-->
-    
-    <div class="d-none col-md-3 d-md-block col-sm-4 d-sm-block my-list-group">
-      <div class="list-group">
-          <a href="#" class="list-group-item list-group-item-action active">October</a>
-          <a href="#" class="list-group-item list-group-item-action">November</a>
-          <a href="#" class="list-group-item list-group-item-action">December</a>
-          <a href="#" class="list-group-item list-group-item-action">January</a>
+    <div class="container mt-4">
+      <div class="row">
+        <!-- Calendar Column -->
+        <div class="col-md-3 d-none d-md-block my-list-group">
+          <div class="list-group">
+            <a href="#" class="list-group-item list-group-item-action active"
+              >October</a
+            >
+            <a href="#" class="list-group-item list-group-item-action"
+              >November</a
+            >
+            <a href="#" class="list-group-item list-group-item-action"
+              >December</a
+            >
+            <a href="#" class="list-group-item list-group-item-action"
+              >January</a
+            >
+          </div>
+        </div>
+
+        <!-- Blog Cards Column -->
+        <div class="col-md-9 d-flex justify-content-center">
+          <div class="blog-container">
+            <div class="card blog-card shadow">
+              <img src="dotnet_600-400.jpg" alt="DotNet" class="card-img-top" />
+              <div class="card-body">
+                <h5 class="card-title">DotNet</h5>
+                <p class="card-text">
+                  Explore the power of .NET through my blog, where I share
+                  insights, tips, and tutorials to help you harness this
+                  versatile framework for your next project.
+                </p>
+              </div>
+            </div>
+
+            <div class="card blog-card shadow">
+              <img src="js_600-400.jpg" alt="JavaScript" class="card-img-top" />
+              <div class="card-body">
+                <h5 class="card-title">JavaScript</h5>
+                <p class="card-text">
+                  Discover the versatility of JavaScript on my blog, where I
+                  share insights, tips, and tutorials to empower you in building
+                  dynamic web applications.
+                </p>
+              </div>
+            </div>
+
+            <div class="card blog-card shadow">
+              <img src="css_600-400.jpg" alt="CSS" class="card-img-top" />
+              <div class="card-body">
+                <h5 class="card-title">CSS</h5>
+                <p class="card-text">
+                  Uncover the art of styling on my blog, where I share insights,
+                  tips, and tutorials to help you master CSS and create visually
+                  stunning web designs.
+                </p>
+              </div>
+            </div>
+
+            <div class="card blog-card shadow">
+              <img src="html_600-400.jpg" alt="HTML" class="card-img-top" />
+              <div class="card-body">
+                <h5 class="card-title">HTML</h5>
+                <p class="card-text">
+                  Explore the foundations of web development on my blog, where I
+                  share insights, tips, and tutorials to help you master HTML
+                  and build robust websites.
+                </p>
+              </div>
+            </div>
+
+            <div class="card blog-card shadow">
+              <img src="mssql_600-400.jpg" alt="MSSQL" class="card-img-top" />
+              <div class="card-body">
+                <h5 class="card-title">MSSQL</h5>
+                <p class="card-text">
+                  Delve into the world of data management on my blog, where I
+                  share insights, tips, and tutorials to help you master MSSQL
+                  and optimize your database solutions.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-  </div>
-
-  <!--Cards-->
-  <div class="card shadow mb-3 blog-card">
-    <div class="row">
-        <div class="col-12">
-            <img src="img/1.jpeg" alt="" class="img-fluid card-img-top">
-        </div>
-        <div class="col-12">
-            <div class="card-body">
-                <h5 class="display-6 fs-5 fw-normal">DotNet</h5>
-                <p class="card-text">Explore the power of .NET through my blog, where I share insights,
-                  tips, and tutorials to help you harness this versatile framework for
-                  your next project.</p>
-            </div>
-        </div>
     </div>
-</div>
-
-<div class="card shadow mb-3 blog-card">
-    <div class="row">
-        <div class="col-12">
-            <img src="img/1.jpeg" alt="" class="img-fluid card-img-top">
-        </div>
-        <div class="col-12">
-            <div class="card-body">
-                <h5 class="display-6 fs-5 fw-normal">Card Title</h5>
-                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="card shadow mb-3 blog-card">
-    <div class="row">
-        <div class="col-12">
-            <img src="img/1.jpeg" alt="" class="img-fluid card-img-top">
-        </div>
-        <div class="col-12">
-            <div class="card-body">
-                <h5 class="display-6 fs-5 fw-normal">Card Title</h5>
-                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="card shadow mb-3 blog-card">
-    <div class="row">
-        <div class="col-12">
-            <img src="img/1.jpeg" alt="" class="img-fluid card-img-top">
-        </div>
-        <div class="col-12">
-            <div class="card-body">
-                <h5 class="display-6 fs-5 fw-normal">Card Title</h5>
-                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            </div>
-        </div>
-    </div>
-</div>
-
-
-  
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
